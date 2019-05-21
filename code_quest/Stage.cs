@@ -9,9 +9,10 @@ namespace code_quest
 {
     class Stage
     {
-        private Field Field;
-        public Point StartPosition { get; set; } 
-        public Point FinishPosition { get; set; }
-        
+        public Field Field = new Field();
+        public Point StartPosition; 
+        public Point FinishPosition;
+
+
     }
 }

@@ -9,7 +9,9 @@ namespace code_quest
 {
     class Field
     {
-        private Cell[,] Matrix;
-        public Size Size { get; set; }
+        //public Cell[,] Matrix { get; set; }
+        public bool[,] Matrix;
+        public Image Image;
+        public Size Size;
     }
 }
