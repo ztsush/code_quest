@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
+using System.Windows.Forms;
 
 namespace code_quest
 {
@@ -23,13 +24,29 @@ namespace code_quest
                     code = code.Insert(i + 1, ";");
                 }
                 string[] Fragments = code.Split(';');
-                foreach(string Fragment in Fragments)
+                foreach (string Fragment in Fragments)
                 {
+                    switch (Fragment)
+                    {
+                        case "turnLeft()":
+                            Result.Add("turnLeft");
+                            break;
+                        case "turnRight()":
+                            Result.Add("turnRight");
+                            break;
+                        case "moveForward()":
+                            Result.Add("moveForward");
+                            break;
+                        default:
+                            MessageBox.Show("|"+Fragment+"|");
+                            Result.Add("ERROR");
+                            break;
+                    }
                 }
 
             }
 
-            
+
             return Result;
         }
     }

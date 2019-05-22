@@ -31,13 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pb_field = new System.Windows.Forms.PictureBox();
             this.panel_editor = new System.Windows.Forms.Panel();
+            this.lb_result = new System.Windows.Forms.Label();
+            this.tb_result = new System.Windows.Forms.TextBox();
+            this.tb_code = new System.Windows.Forms.TextBox();
             this.btn_stop = new System.Windows.Forms.Button();
             this.btn_start = new System.Windows.Forms.Button();
-            this.tb_code = new System.Windows.Forms.TextBox();
-            this.tb_result = new System.Windows.Forms.TextBox();
-            this.lb_result = new System.Windows.Forms.Label();
+            this.pb_hero = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_field)).BeginInit();
             this.panel_editor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_hero)).BeginInit();
             this.SuspendLayout();
             // 
             // pb_field
@@ -63,6 +65,35 @@
             this.panel_editor.Size = new System.Drawing.Size(200, 400);
             this.panel_editor.TabIndex = 1;
             // 
+            // lb_result
+            // 
+            this.lb_result.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lb_result.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lb_result.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb_result.Location = new System.Drawing.Point(3, 298);
+            this.lb_result.Name = "lb_result";
+            this.lb_result.Size = new System.Drawing.Size(192, 23);
+            this.lb_result.TabIndex = 6;
+            this.lb_result.Text = "result";
+            this.lb_result.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tb_result
+            // 
+            this.tb_result.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tb_result.Location = new System.Drawing.Point(3, 324);
+            this.tb_result.Multiline = true;
+            this.tb_result.Name = "tb_result";
+            this.tb_result.Size = new System.Drawing.Size(192, 71);
+            this.tb_result.TabIndex = 5;
+            // 
+            // tb_code
+            // 
+            this.tb_code.Location = new System.Drawing.Point(3, 44);
+            this.tb_code.Multiline = true;
+            this.tb_code.Name = "tb_code";
+            this.tb_code.Size = new System.Drawing.Size(192, 250);
+            this.tb_code.TabIndex = 4;
+            // 
             // btn_stop
             // 
             this.btn_stop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_stop.BackgroundImage")));
@@ -84,34 +115,15 @@
             this.btn_start.UseVisualStyleBackColor = true;
             this.btn_start.Click += new System.EventHandler(this.btn_start_Click);
             // 
-            // tb_code
+            // pb_hero
             // 
-            this.tb_code.Location = new System.Drawing.Point(3, 44);
-            this.tb_code.Multiline = true;
-            this.tb_code.Name = "tb_code";
-            this.tb_code.Size = new System.Drawing.Size(192, 250);
-            this.tb_code.TabIndex = 4;
-            // 
-            // tb_result
-            // 
-            this.tb_result.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tb_result.Location = new System.Drawing.Point(3, 324);
-            this.tb_result.Multiline = true;
-            this.tb_result.Name = "tb_result";
-            this.tb_result.Size = new System.Drawing.Size(192, 71);
-            this.tb_result.TabIndex = 5;
-            // 
-            // lb_result
-            // 
-            this.lb_result.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.lb_result.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lb_result.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lb_result.Location = new System.Drawing.Point(3, 298);
-            this.lb_result.Name = "lb_result";
-            this.lb_result.Size = new System.Drawing.Size(192, 23);
-            this.lb_result.TabIndex = 6;
-            this.lb_result.Text = "result";
-            this.lb_result.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pb_hero.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_hero.BackgroundImage")));
+            this.pb_hero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pb_hero.Location = new System.Drawing.Point(113, 111);
+            this.pb_hero.Name = "pb_hero";
+            this.pb_hero.Size = new System.Drawing.Size(47, 50);
+            this.pb_hero.TabIndex = 2;
+            this.pb_hero.TabStop = false;
             // 
             // Form1
             // 
@@ -119,6 +131,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(933, 424);
+            this.Controls.Add(this.pb_hero);
             this.Controls.Add(this.panel_editor);
             this.Controls.Add(this.pb_field);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -129,6 +142,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_field)).EndInit();
             this.panel_editor.ResumeLayout(false);
             this.panel_editor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_hero)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -142,6 +156,7 @@
         private System.Windows.Forms.Label lb_result;
         private System.Windows.Forms.TextBox tb_result;
         private System.Windows.Forms.TextBox tb_code;
+        private System.Windows.Forms.PictureBox pb_hero;
     }
 }
 
