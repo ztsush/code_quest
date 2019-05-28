@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pb_field = new System.Windows.Forms.PictureBox();
             this.panel_editor = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lb_result = new System.Windows.Forms.Label();
             this.tb_result = new System.Windows.Forms.TextBox();
             this.tb_code = new System.Windows.Forms.TextBox();
             this.btn_stop = new System.Windows.Forms.Button();
             this.btn_start = new System.Windows.Forms.Button();
             this.pb_hero = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_field)).BeginInit();
             this.panel_editor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_hero)).BeginInit();
@@ -73,6 +73,25 @@
             this.panel_editor.Size = new System.Drawing.Size(330, 750);
             this.panel_editor.TabIndex = 1;
             // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(7, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(188, 23);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "опис";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(3, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(192, 23);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Попелюшка і Василь";
+            // 
             // lb_result
             // 
             this.lb_result.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -104,7 +123,7 @@
             this.tb_code.Location = new System.Drawing.Point(3, 64);
             this.tb_code.Multiline = true;
             this.tb_code.Name = "tb_code";
-            this.tb_code.Size = new System.Drawing.Size(292, 518);
+            this.tb_code.Size = new System.Drawing.Size(322, 518);
             this.tb_code.TabIndex = 4;
             this.tb_code.Text = "moveForward();";
             this.tb_code.TextChanged += new System.EventHandler(this.tb_code_TextChanged);
@@ -136,30 +155,11 @@
             // 
             this.pb_hero.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_hero.BackgroundImage")));
             this.pb_hero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pb_hero.Location = new System.Drawing.Point(113, 111);
+            this.pb_hero.Location = new System.Drawing.Point(263, 287);
             this.pb_hero.Name = "pb_hero";
             this.pb_hero.Size = new System.Drawing.Size(47, 50);
             this.pb_hero.TabIndex = 2;
             this.pb_hero.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(3, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 23);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Попелюшка і Василь";
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(7, 38);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(188, 23);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "опис";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form1
             // 
