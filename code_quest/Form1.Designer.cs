@@ -46,7 +46,9 @@
             // 
             // pb_field
             // 
+            this.pb_field.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pb_field.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_field.BackgroundImage")));
+            this.pb_field.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pb_field.Location = new System.Drawing.Point(12, 12);
             this.pb_field.Name = "pb_field";
             this.pb_field.Size = new System.Drawing.Size(1000, 750);
@@ -55,6 +57,9 @@
             // 
             // panel_editor
             // 
+            this.panel_editor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_editor.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel_editor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_editor.Controls.Add(this.label2);
             this.panel_editor.Controls.Add(this.label1);
@@ -65,16 +70,16 @@
             this.panel_editor.Controls.Add(this.btn_start);
             this.panel_editor.Location = new System.Drawing.Point(1024, 12);
             this.panel_editor.Name = "panel_editor";
-            this.panel_editor.Size = new System.Drawing.Size(350, 500);
+            this.panel_editor.Size = new System.Drawing.Size(330, 750);
             this.panel_editor.TabIndex = 1;
             // 
             // lb_result
             // 
-            this.lb_result.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lb_result.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_result.BackColor = System.Drawing.SystemColors.ControlLight;
             this.lb_result.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_result.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lb_result.Location = new System.Drawing.Point(153, 398);
+            this.lb_result.Location = new System.Drawing.Point(3, 639);
             this.lb_result.Name = "lb_result";
             this.lb_result.Size = new System.Drawing.Size(192, 23);
             this.lb_result.TabIndex = 6;
@@ -85,7 +90,7 @@
             // 
             this.tb_result.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.tb_result.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tb_result.Location = new System.Drawing.Point(3, 424);
+            this.tb_result.Location = new System.Drawing.Point(3, 674);
             this.tb_result.Multiline = true;
             this.tb_result.Name = "tb_result";
             this.tb_result.Size = new System.Drawing.Size(192, 71);
@@ -96,19 +101,20 @@
             this.tb_code.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.tb_code.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tb_code.Location = new System.Drawing.Point(3, 86);
+            this.tb_code.Location = new System.Drawing.Point(3, 64);
             this.tb_code.Multiline = true;
             this.tb_code.Name = "tb_code";
-            this.tb_code.Size = new System.Drawing.Size(292, 268);
+            this.tb_code.Size = new System.Drawing.Size(292, 518);
             this.tb_code.TabIndex = 4;
             this.tb_code.Text = "moveForward();";
             this.tb_code.TextChanged += new System.EventHandler(this.tb_code_TextChanged);
             // 
             // btn_stop
             // 
+            this.btn_stop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_stop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_stop.BackgroundImage")));
             this.btn_stop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_stop.Location = new System.Drawing.Point(160, 351);
+            this.btn_stop.Location = new System.Drawing.Point(160, 601);
             this.btn_stop.Name = "btn_stop";
             this.btn_stop.Size = new System.Drawing.Size(35, 35);
             this.btn_stop.TabIndex = 3;
@@ -116,8 +122,9 @@
             // 
             // btn_start
             // 
+            this.btn_start.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_start.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_start.Location = new System.Drawing.Point(3, 351);
+            this.btn_start.Location = new System.Drawing.Point(3, 601);
             this.btn_start.Name = "btn_start";
             this.btn_start.Size = new System.Drawing.Size(151, 35);
             this.btn_start.TabIndex = 2;
@@ -147,7 +154,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(7, 48);
+            this.label2.Location = new System.Drawing.Point(7, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(188, 23);
             this.label2.TabIndex = 8;
