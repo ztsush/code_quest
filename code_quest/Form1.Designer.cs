@@ -86,10 +86,10 @@
             // 
             // panel_header
             // 
+            resources.ApplyResources(this.panel_header, "panel_header");
             this.panel_header.Controls.Add(this.btn_question);
             this.panel_header.Controls.Add(this.btn_minimize);
             this.panel_header.Controls.Add(this.btn_close);
-            resources.ApplyResources(this.panel_header, "panel_header");
             this.panel_header.Name = "panel_header";
             // 
             // btn_question
